@@ -1,0 +1,242 @@
+What is this about:
+    About myself:
+        1. Age 14
+        2. First name Nuriddin
+            2.1. Nickname SOURCE_CODE_SORCERER
+            2.2. SCS is short for SOURCE_CODE_SORCERER
+        3. Last name Abduraxmonov
+        4. Uses arch linux btw with custom hyprland built and dotfiles.
+        5. Loves motion design and opened telegram channel called "Shablonlar kanali | SCS" url "https://t.me/scs_motions"
+        6. Has a public group that will be uploaded fixed templates.
+        7. Understands various langueages (Even if can't write his own code he can 100% customize it and add new features by reading source code)  like: python, javascript, typescript, css...
+    What i want to make:
+        1. Telegram bot to stop begging relatives or strangers to buy my templates and automate making them for free.
+        2. Become the hidden king of my mansion making and adding templates for everyone for free and make it easy to make inside the telegram bot.
+        3. When i want to add new assets or edit old ones i should have get config file to manage templates like their names, editablity, IDs, urls, descriptions will send to user when template is finished etc.
+    My goal:
+        1. Give everyone free templates and make someones contents more entertaining.
+        2. See random people using my template and feel pride.
+        3. Also get audience attention.
+
+SCS motions bot plan:
+    Must Include things:
+        1. Guide to the bot (how to use it, who is owner of it, who makes these templates, who is designer)
+        2. Can't use bot until subscribed to the channel and public group
+        3. Internal telegram buttons to select templates
+        4. Internal Mini WebApp that users selects their color and copy the hex (some templates includes user defiened accents)
+        5. Categorized buttons. I extremely organized my src folder so it has to be Categorized inside the telegram bot also
+        6. Bot queuery shows user their queue number and tells them wait this will save power of cpu/gpu
+        7. Only latin letters no krylik or other special characters bot warns them in the guides it may cause weird symbols instead of their letters
+        8. Autoclean: bot will double checks the file actually rendered and sended and then deletes image sequence and .mov file this prevents ssd fillup
+        9. Error handling: if something fails telegram bot will send them something went wrong when making your template please try again later or contact to the developer (me) message.
+    How it works:
+        How users find template and it's preview:
+            1. From my telegram channel everything will be uploaded preview, template name, variations, ~fileSize etc.
+            2. Users will look through my telegram channel to find and see the preview.
+        Fixed templates (Overlays, Backgrounds, Like and Subscribe or Follow reminders):
+            1. They will be rendered and sended to the public group and there will be post link. So bot doesn't renders the entire thing again instead it will forwards the template to the user when selected (this will save so much cpu gpu power).
+        User editable templates (the actual users can send their usernames or nicknames that the remotion will render):
+            1. User selects that template.
+            2. bot will gets Props of the template and asks user them one by one like type username, type phoneNumber, type sub texts etc. according to the Props of template.
+            3. After bot gets every prop from user it will sends command to remotion to render project in image sequence and then ffmpeg command to make prores 4444 transparent high quality file (filename will be props that got from user).
+            4. And then bot sends them .mov file
+            5. Bot double checks if user recieved it and then bot deletes local machine files
+        Mini WebApp:
+            1. We don't make one from scratch we will just insert url for the website. that's it.
+Things i think you need:
+    Bots example configuration:
+        Editable things:
+            1.TelegramNotify (one element: channelName)
+            2.YoutubeNotify (one element: channelName)
+            3.InstagramNotify (one element: channelName)
+            4.PhoneNumber (one element: phoneNumber)
+            5.Banner (two elements: channelName, iconKeys (strictly three iconKeys will be choosen by user iconKeys list: Github, Instagram, Telegram, YouTube))
+            6.ShukronaIntro01 (three elements: channelName, subTexts, activeText)
+            7.Intro01SCS (four elements: channelName one word strictly e.g. SOURCE_CODE_SORCERER not SOURCE CODE SORCERER, statusMessage, statusResult, accentColor (hex color code e.g. #22d3ee mini app will help them))
+        Fixed things:
+            1.From Border-01 to Border-09 (users will choose version between gold or silver bot will forwards it to them)
+            2.LikeAndSubscribeReminder01 (Only one version available bot will just send it)
+            3.StarBurstOverlay01 (Two versions gold and silver)
+            4.LightLeaksOverlay01 (Only one version available bot will just send it)
+            5.WrinkledPaper001 (Only one version available bot will just send it)
+            6.CyberGrid001 (Only one version available bot will just send it)
+        !!!Attention!!!
+        Things not provided in the list are under construction and not finished yet:
+            1.InstagramFollowReminder001
+
+    My folder structure:
+󰣇 › tree                                                                                                                                                                         RemotionAnimations/src main
+.
+├── botPlan.txt
+├── components
+│   ├── Backgrounds
+│   │   ├── CyberGrid001
+│   │   │   └── CyberGrid001.tsx
+│   │   └── WrinkledPaper001
+│   │       └── WrinkledPaper001.tsx
+│   ├── Borders
+│   │   ├── Border001
+│   │   │   ├── Border001.tsx
+│   │   │   └── pathData.ts
+│   │   ├── Border002
+│   │   │   ├── Border002.tsx
+│   │   │   └── pathData.ts
+│   │   ├── Border003
+│   │   │   ├── Border003.tsx
+│   │   │   └── pathData.ts
+│   │   ├── Border004
+│   │   │   ├── Border004.tsx
+│   │   │   └── pathData.ts
+│   │   ├── Border005
+│   │   │   ├── Border005.tsx
+│   │   │   └── pathData.ts
+│   │   ├── Border006
+│   │   │   ├── Border006.tsx
+│   │   │   └── pathData.ts
+│   │   ├── Border007
+│   │   │   ├── Border007.tsx
+│   │   │   └── pathData.ts
+│   │   ├── Border008
+│   │   │   ├── Border008.tsx
+│   │   │   └── pathData.ts
+│   │   ├── Border009
+│   │   │   ├── Border009.tsx
+│   │   │   └── Path.ts
+│   │   └── index.ts
+│   ├── Overlays
+│   │   ├── index.ts
+│   │   ├── LightLeaks
+│   │   │   └── LightLeaks001
+│   │   │       └── LightLeaks001.tsx
+│   │   └── StarBurstOverlay001
+│   │       └── StarBurstOverlay001.tsx
+│   └── Social
+│       ├── Banners
+│       │   └── SocialMediaBanner3D001
+│       │       ├── BannerModel.tsx
+│       │       └── Banner.tsx
+│       ├── ContactElements
+│       │   └── PhoneNumberMotion01
+│       │       └── PhoneNumberMotion01.tsx
+│       ├── index.ts
+│       ├── Notifications
+│       │   └── JoinSocialMediaNotifications
+│       │       ├── joinIGNotif.tsx
+│       │       ├── joinTGNotif.tsx
+│       │       └── joinYTNotif.tsx
+│       └── Reminders
+│           ├── InstagramFollowReminders
+│           │   └── 001
+│           │       └── InstagramFollowReminder001.tsx
+│           └── LikeAndSubscribeReminder
+│               └── 01
+│                   ├── demo
+│                   │   ├── index.html
+│                   │   └── style.css
+│                   ├── LikeAndSubscribeReminder01.tsx
+│                   └── pathData.ts
+├── compositions
+│   ├── Ads
+│   │   └── SCSAd001
+│   │       ├── components
+│   │       │   └── Transition.tsx
+│   │       ├── cuts
+│   │       │   ├── FinalCut.tsx
+│   │       │   ├── FirstCut.tsx
+│   │       │   ├── SecondCut.tsx
+│   │       │   └── ThirdCut.tsx
+│   │       └── SCSAd001.tsx
+│   └── Intros
+│       ├── IntroSCS001
+│       │   └── Intro01.tsx
+│       └── IntroShukrona001
+│           └── IntroShukrona01.tsx
+├── index.css
+├── index.ts
+└── Root.tsx
+
+40 directories, 48 files
+
+    Root.tsx file:
+import React, { version } from 'react';
+import { Composition, staticFile } from 'remotion';
+
+// Borders
+import {
+    Border001, Border001Schema,
+    Border002, Border002Schema,
+    Border003, Border003Schema,
+    Border004, Border004Schema,
+    Border005, Border005Schema,
+    Border006, Border006Schema,
+    Border007, Border007Schema,
+    Border008, Border008Schema,
+    Border009, Border009Schema
+} from './components/Borders';
+
+// Social
+import {
+    Banner,
+    PhoneNumberMotion001,
+    PhoneNumberSchema,
+    InstagramNotify, InstagramNotifySchema,
+    TelegramNotify, TelegramNotifySchema,
+    YouTubeNotify, YouTubeNotifySchema,
+    InstagramFollowReminder001, InstagramFollowSchema,
+    LikeAndSubscribeReminder01,
+    BannerProps
+} from './components/Social';
+
+// Overlays
+import {
+    LightLeaksOverlay001,
+    StarBurstOverlay001, StarBurst001Schema
+} from './components/Overlays';
+
+// BACKGROUNDS
+import { WrinkledPaper001 } from './components/Backgrounds/WrinkledPaper001/WrinkledPaper001';
+import { CyberGrid001 } from './components/Backgrounds/CyberGrid001/CyberGrid001';
+
+// Compositions
+import { SCSAd001 } from './compositions/Ads/SCSAd001/SCSAd001';
+import { Intro001, Intro001Schema } from './compositions/Intros/IntroSCS001/Intro01';
+import { IntroShukrona001, IntroShukronaSchema } from './compositions/Intros/IntroShukrona001/IntroShukrona01';
+
+export const RemotionRoot: React.FC = () => {
+    return (
+        <>
+            {/* --- BORDERS --- */}
+            <Composition id="Border-01" component={Border001} schema={Border001Schema} durationInFrames={720} fps={60} width={1920} height={1080} defaultProps={{ version: "gold", drawSeconds: 4, idleSeconds: 3, undrawSeconds: 4, staggerFactor: 0.005, verticalGap: 300, glowColor: "#ffcc33", }} />
+            <Composition id="Border-02" component={Border002} schema={Border002Schema} durationInFrames={450} fps={45} width={1920} height={1080} defaultProps={{ version: "gold", inDuration: 2.5, staticDuration: 5, outDuration: 2.5, floatAmplitude: 3, floatFrequency: 0.08, borderWidth: 1400, }} />
+            <Composition id="Border-03" component={Border003} schema={Border003Schema} durationInFrames={780} fps={60} width={1920} height={1080} defaultProps={{ version: "gold", transitionSeconds: 4.5, floatSpeed: 25, floatAmplitude: 1.5, strokeWidth: 1.5, }} />
+            <Composition id="Border-04" component={Border004} schema={Border004Schema} durationInFrames={600} fps={60} width={1920} height={1080} defaultProps={{ version: "gold" as const, drawSeconds: 3, outStartSeconds: 7, floatAmplitude: 2.5, }} />
+            <Composition id="Border-05" component={Border005} schema={Border005Schema} durationInFrames={1000} fps={60} width={1920} height={1080} defaultProps={{ version: 'gold', drawInSeconds: 9, staticHoldSeconds: 2, drawOutSeconds: 6, globalScale: 0.75, }} />
+            <Composition id="Border-06" component={Border006} schema={Border006Schema} durationInFrames={902} fps={60} width={1920} height={1080} defaultProps={{ version: 'gold', drawInSeconds: 7, undrawSeconds: 7, shimmerSpeedSeconds: 4, staticWhiteOpacity: 1, goldBaseColor: "#8A6628", silverBaseColor: "#757575", }} />
+            <Composition id="Border-07" component={Border007} schema={Border007Schema} durationInFrames={1050} fps={60} width={1920} height={1080} defaultProps={{ version: 'gold', undrawStartSeconds: 11, animationSpeed: 150, sweepLoopDuration: 300, }} />
+            <Composition id="Border-08" component={Border008} schema={Border008Schema} durationInFrames={980} fps={60} width={1920} height={1080} defaultProps={{ version: 'gold', undrawStartSeconds: 9.6, drawDurationMax: 480, masterScale: 5, }} />
+            <Composition id="Border-09" component={Border009} schema={Border009Schema} durationInFrames={600} fps={60} width={1920} height={1080} defaultProps={{ version: "silver" as const, }} />
+
+            {/* --- SOCIAL & NOTIFICATIONS --- */}
+            <Composition id='TelegramNotify' component={TelegramNotify} schema={TelegramNotifySchema} durationInFrames={300} fps={60} width={1920} height={1080} defaultProps={{ channelName: "kanal nomi", }} />
+            <Composition id='YoutubeNotify' component={YouTubeNotify} schema={YouTubeNotifySchema} durationInFrames={300} fps={60} width={1920} height={1080} defaultProps={{ channelName: 'kanal nomi' }} />
+            <Composition id='InstagramNotify' component={InstagramNotify} schema={InstagramNotifySchema} durationInFrames={300} fps={60} width={1920} height={1080} defaultProps={{ channelName: 'kanal nomi' }} />
+            <Composition id='InstagramFollowReminder001' component={InstagramFollowReminder001} schema={InstagramFollowSchema} durationInFrames={300} fps={60} width={1920} height={1080} defaultProps={{ username: "scs_motions", profileImg: staticFile("images/LogoSCS01-motion-channel.png"), }} />
+            <Composition id='LikeAndSubscribeReminder01' component={LikeAndSubscribeReminder01} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="PhoneNumber" component={PhoneNumberMotion001} schema={PhoneNumberSchema} durationInFrames={300} fps={60} width={1920} height={1080} defaultProps={{ phoneNumber: "+998 93 792 0578", }} />
+            <Composition id="Banner" component={Banner} schema={BannerProps} durationInFrames={300} fps={60} width={1920} height={1080} defaultProps={{ channelName: "@kanal nomi", iconKeys: ["Telegram" as const, "Instagram" as const, "YouTube" as const, "Github" as const,], }} />
+
+            {/* --- INTROS & ADS --- */}
+            <Composition id="ShukronaIntro01" component={IntroShukrona001} schema={IntroShukronaSchema} durationInFrames={480} fps={60} width={1920} height={1080} defaultProps={{ channelName: "kanal nomi", subTexts: ["PRESENTS",], activeText: "PRESENTS", }} />
+            <Composition id="Intro01SCS" component={Intro001} schema={Intro001Schema} durationInFrames={600} fps={60} width={1920} height={1080} defaultProps={{ channelName: "SOURCE_CODE_SORCERER", statusMessage: "TEACHING_LINUX", statusResult: "ONGOING", accentColor: "#22d3ee", }} />
+            <Composition id="SCS-Ad-001" component={SCSAd001} durationInFrames={1320} fps={60} width={1080} height={1920} />
+
+            {/* --- OVERLAYS & BACKGROUNDS --- */}
+            <Composition id="StarBurstOverlay01" component={StarBurstOverlay001} schema={StarBurst001Schema} durationInFrames={1800} fps={60} width={1920} height={1080} defaultProps={{ version: "gold" }} />
+            <Composition id="LightLeaksOverlay01" component={LightLeaksOverlay001} durationInFrames={1800} fps={60} width={1920} height={1080} />
+            <Composition id='WrinkledPaper001' component={WrinkledPaper001} durationInFrames={1200} fps={60} width={1920} height={1080} />
+            <Composition id='CyberGrid001' component={CyberGrid001} durationInFrames={1200} fps={60} width={1080} height={1920} />
+        </>
+    );
+};
+TOKEN = "8583294744:AAH_4Jiic4LeDlxNRwnGjycGI02pm1ukG5g"
+ADMIN_ID = 5625023723

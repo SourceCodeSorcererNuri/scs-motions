@@ -1,0 +1,423 @@
+{
+    "INTROLAR": [
+        {
+            "id": "Intro01SCS",
+            "name": "Source Code Sorcerer stilidagi intro",
+            "description": "Kiber stildagi intro.",
+            "type": "editable",
+            "format": "mp4",
+            "includesAudio": false,
+            "inputs": [
+                {
+                    "key": "channelName",
+                    "prompt": "Foydalanuvchi nomini yozing (bosh joy tashlamasdan `_` yoki `-` bilan)",
+                    "validation": "^[a-zA-Z0-9_-]+$"
+                },
+                {
+                    "key": "accentColor",
+                    "prompt": "Asosiy rangni html hex formatda tashlang (misol uchun: #22d3ee yoki #ff0000)",
+                    "validation": "^#([0-9A-Fa-f]{6})$"
+                }
+            ]
+        },
+        {
+            "id": "GamingIntro001",
+            "name": "GamingIntro001",
+            "description": "KiberPank stildagi gaming intro",
+            "type": "editable",
+            "format": "mp4",
+            "includesAudio": false,
+            "inputs": [
+                {
+                    "key": "title",
+                    "prompt": "Foydalanuvchi nomi yoki Kanal nomini yozing (Lotin alifbosidan foydalanilsin)",
+                    "validation": "^[a-zA-Z0-9_. ]+$"
+                },
+                {
+                    "key": "neonColor",
+                    "prompt": "Neon rangni hex shaklda kiritng (binolar va asosiy text uchun) *Hex rangni bot ichidagi mini dastur orqali tanlab olishingiz mumkin*",
+                    "validation": "^#([0-9A-Fa-f]{6})$"
+                },
+                {
+                    "key": "sunColor",
+                    "prompt": "Quyosh va qo'shimcha text rangini hex shaklda kiriting *Hex rangni bot ichidagi mini dastur orqali tanlab olishingiz mumkin*",
+                    "validation": "^#([0-9A-Fa-f]{6})$"
+                }
+            ]
+        }
+    ],
+    "IJTIMOIY TARMOQ": [
+        {
+            "id": "PhoneNumberMotion001",
+            "name": "Telefon Raqam Shabloni 001",
+            "description": "Skeuomorphism stilidagi telefon raqam yozish mumkin bo'lgan shablon bu bilan siz bemalol murojaat qilish uchun telefon raqamni yozib foydalanishingiz mumkin.",
+            "type": "editable",
+            "format": "mov",
+            "includesAudio": false,
+            "inputs": [
+                {
+                    "key": "phoneNumber",
+                    "prompt": "Telefon raqam kiriting (misol uchun: +998 00 000 0000)",
+                    "validation": "^\\+?[0-9\\s-]{9,20}$"
+                }
+            ]
+        },
+        {
+            "id": "InstagramNotify",
+            "name": "Instagram Notifikatsiya",
+            "description": "Instagramingizni kontentlaringizda qoldirib ketish uchun notifikatsiya.",
+            "type": "editable",
+            "format": "mov",
+            "includesAudio": false,
+            "inputs": [
+                {
+                    "key": "channelName",
+                    "prompt": "Foydalanuvchi nomingizni yozing",
+                    "validation": "^[a-zA-Z0-9_.]+$"
+                }
+            ]
+        },
+        {
+            "id": "YouTubeNotify",
+            "name": "YouTube Notifikatsiya",
+            "description": "YouTube kanalingizni kontentlaringizda qoldirib ketish uchun notifikatsiya.",
+            "type": "editable",
+            "format": "mov",
+            "includesAudio": false,
+            "inputs": [
+                {
+                    "key": "channelName",
+                    "prompt": "YouTube kanal nomingizni yozing",
+                    "validation": "^.{3,50}$"
+                }
+            ]
+        },
+        {
+            "id": "TelegramNotify",
+            "name": "Telegram Notifikatsiya",
+            "description": "Telegram kanalingizni kontentlaringizda qoldirib ketish uchun notifikatsiya.",
+            "type": "editable",
+            "format": "mov",
+            "includesAudio": false,
+            "inputs": [
+                {
+                    "key": "channelName",
+                    "prompt": "YouTube kanal nomingizni yozing",
+                    "validation": "^.{3,50}$"
+                }
+            ]
+        },
+        {
+            "id": "Banner",
+            "name": "Ijtimoiy tarmoq banneri",
+            "description": "3ta platforma birda bo'lgan Ijtimoiy tarmoq banneri",
+            "type": "editable",
+            "format": "mov",
+            "includesAudio": false,
+            "inputs": [
+                {
+                   "key": "channelName",
+                   "prompt": "Foydalanuvchi nomingizni kiriting",
+                   "validation": "^.{3,50}$"
+                },
+                {
+                    "key": "iconKeys",
+                    "prompt": "3ta Ijtimoiy tarmoq rasmini tanlang",
+                    "validation": "^(Telegram|Instagram|YouTube)"
+                }
+            ],
+            "variants": ["Telegram", "Instagram", "YouTube"]
+        },
+        {
+            "id": "LikeAndSubscribeReminder001",
+            "name": "Layk va Obuna bo'lishni eslatuvchi notifikatsiya 001",
+            "description": "YouTube videolaringizda layk bosish va obuna bo'lishni eslatib qo'yuvchi bildirishnoma",
+            "type": "fixed",
+            "format": "mov",
+            "includesAudio": false,
+            "postLinks": {
+                "default": "https://t.me/scs_assets/39"
+            },
+            "inputs": []
+        }
+    ],
+    "BORDERLAR": [
+        {
+            "id": "Border001",
+            "name": "Border 001",
+            "description": "Ushbu gulli stildagi border yordamida siz to'y marosimlari videolarida ismlarni yozib to'y videongizni yanada premium qilishingiz mumkin.",
+            "type": "fixed",
+            "format": "mov",
+            "includesAudio": false,
+            "variants": ["gold", "silver"],
+            "postLinks": {
+                "gold": "https://t.me/scs_assets/13",
+                "silver": "https://t.me/scs_assets/14"
+            },
+            "inputs": [
+                {
+                    "key": "variant",
+                    "prompt": "Variant tanlang: gold or silver",
+                    "validation": "^(gold|silver)$"
+                }
+            ]
+        },
+        {
+            "id": "Border002",
+            "name": "Border 002",
+            "description": "Ushbu yurak stildagi border yordamida siz to'y marosimlari videolarida ismlarni yozib to'y videongizni yanada premium qilishingiz mumkin.",
+            "type": "fixed",
+            "format": "mov",
+            "includesAudio": false,
+            "variants": ["gold", "silver"],
+            "postLinks": {
+                "gold": "https://t.me/scs_assets/15",
+                "silver": "https://t.me/scs_assets/16"
+            },
+            "inputs": [
+                {
+                    "key": "variant",
+                    "prompt": "Variant tanlang: gold or silver",
+                    "validation": "^(gold|silver)$"
+                }
+            ]
+        },
+        {
+            "id": "Border003",
+            "name": "Border 003",
+            "description": "Ushbu gul stildagi border yordamida siz to'y marosimlari videolarida ismlarni yozib to'y videongizni yanada premium qilishingiz mumkin.",
+            "type": "fixed",
+            "format": "mov",
+            "includesAudio": false,
+            "variants": ["gold", "silver"],
+            "postLinks": {
+                "gold": "https://t.me/scs_assets/25",
+                "silver": "https://t.me/scs_assets/26"
+            },
+            "inputs": [
+                {
+                    "key": "variant",
+                    "prompt": "Variant tanlang: gold or silver",
+                    "validation": "^(gold|silver)$"
+                }
+            ]
+        },
+        {
+            "id": "Border004",
+            "name": "Border 004",
+            "description": "Ushbu gul stildagi border yordamida siz to'y marosimlari videolarida ismlarni yozib to'y videongizni yanada premium qilishingiz mumkin.",
+            "type": "fixed",
+            "format": "mov",
+            "includesAudio": false,
+            "variants": ["gold", "silver"],
+            "postLinks": {
+                "gold": "https://t.me/scs_assets/27",
+                "silver": "https://t.me/scs_assets/28"
+            },
+            "inputs": [
+                {
+                    "key": "variant",
+                    "prompt": "Variant tanlang: gold or silver",
+                    "validation": "^(gold|silver)$"
+                }
+            ]
+        },
+        {
+            "id": "Border005",
+            "name": "Border 005",
+            "description": "Ushbu yurak stildagi border yordamida siz to'y marosimlari videolarida ismlarni yozib to'y videongizni yanada premium qilishingiz mumkin.",
+            "type": "fixed",
+            "format": "mov",
+            "includesAudio": false,
+            "variants": ["gold", "silver"],
+            "postLinks": {
+                "gold": "https://t.me/scs_assets/29",
+                "silver": "https://t.me/scs_assets/30"
+            },
+            "inputs": [
+                {
+                    "key": "variant",
+                    "prompt": "Variant tanlang: gold or silver",
+                    "validation": "^(gold|silver)$"
+                }
+            ]
+        },
+        {
+            "id": "Border006",
+            "name": "Border 006",
+            "description": "Ushbu gul stildagi border yordamida siz to'y marosimlari videolarida ismlarni yozib to'y videongizni yanada premium qilishingiz mumkin.",
+            "type": "fixed",
+            "format": "mov",
+            "includesAudio": false,
+            "variants": ["gold", "silver"],
+            "postLinks": {
+                "gold": "https://t.me/scs_assets/31",
+                "silver": "https://t.me/scs_assets/32"
+            },
+            "inputs": [
+                {
+                    "key": "variant",
+                    "prompt": "Variant tanlang: gold or silver",
+                    "validation": "^(gold|silver)$"
+                }
+            ]
+        },
+        {
+            "id": "Border007",
+            "name": "Border 007",
+            "description": "Ushbu yurak stildagi border yordamida siz to'y marosimlari videolarida ismlarni yozib to'y videongizni yanada premium qilishingiz mumkin.",
+            "type": "fixed",
+            "format": "mov",
+            "includesAudio": false,
+            "variants": ["gold", "silver"],
+            "postLinks": {
+                "gold": "https://t.me/scs_assets/33",
+                "silver": "https://t.me/scs_assets/34"
+            },
+            "inputs": [
+                {
+                    "key": "variant",
+                    "prompt": "Variant tanlang: gold or silver",
+                    "validation": "^(gold|silver)$"
+                }
+            ]
+        },
+        {
+            "id": "Border008",
+            "name": "Border 008",
+            "description": "Ushbu yurak stildagi border yordamida siz to'y marosimlari videolarida ismlarni yozib to'y videongizni yanada premium qilishingiz mumkin.",
+            "type": "fixed",
+            "format": "mov",
+            "includesAudio": false,
+            "variants": ["gold", "silver"],
+            "postLinks": {
+                "gold": "https://t.me/scs_assets/35",
+                "silver": "https://t.me/scs_assets/36"
+            },
+            "inputs": [
+                {
+                    "key": "variant",
+                    "prompt": "Variant tanlang: gold or silver",
+                    "validation": "^(gold|silver)$"
+                }
+            ]
+        },
+        {
+            "id": "Border009",
+            "name": "Border 009",
+            "description": "Ushbu yurak stildagi border yordamida siz to'y marosimlari videolarida ismlarni yozib to'y videongizni yanada premium qilishingiz mumkin.",
+            "type": "fixed",
+            "format": "mov",
+            "includesAudio": false,
+            "variants": ["gold", "silver"],
+            "postLinks": {
+                "gold": "https://t.me/scs_assets/37",
+                "silver": "https://t.me/scs_assets/38"
+            },
+            "inputs": [
+                {
+                    "key": "variant",
+                    "prompt": "Variant tanlang: gold or silver",
+                    "validation": "^(gold|silver)$"
+                }
+            ]
+        }
+    ],
+    "ORQA FONLAR": [
+        {
+            "id": "WrinkledPaper001",
+            "name": "G'ijimlangan qog'oz orqa foni 001",
+            "description": "Kontentlaringizni zerikarli bo'lib qolmasligini ta'minlovchi g'ijimlangan qog'ozdan ilhomlangan orqa fon.",
+            "type": "fixed",
+            "format": "mp4",
+            "includesAudio": false,"variants": ["desktop", "mobile"],
+            "postLinks": {
+                "desktop": "https://t.me/scs_assets/20",
+                "mobile": "https://t.me/scs_assets/19"
+            },
+            "inputs": [
+                {
+                    "key": "variant",
+                    "prompt": "Varyant tanlang: desktop (16:9) or mobile (9:16)",
+                    "validation": "^(desktop|mobile)$"
+                }
+            ]
+        },
+        {
+            "id": "CyberGrid001",
+            "name": "Kiber Kataklar 001",
+            "description": "Texnika yoki gaming videolaringizda foydalanishingiz uchun Kiber kataklar stilidagi orqa fon.",
+            "type": "fixed",
+            "format": "mp4",
+            "includesAudio": false,
+            "variants": ["desktop", "mobile"],
+            "postLinks": {
+                "desktop": "https://t.me/scs_assets/21",
+                "mobile": "https://t.me/scs_assets/22"
+            },
+            "inputs": [
+                {
+                    "key": "variant",
+                    "prompt": "Varyant tanlang: desktop (16:9) or mobile (9:16)",
+                    "validation": "^(desktop|mobile)$"
+                }
+            ]
+        }
+    ],
+    "USTKI QATLAMLAR": [
+        {
+            "id": "LightLeaksOverlay01",
+            "name": "Yorug'lik tushish ustki qatlami 01",
+            "description": "Professional yorug'lik tushish ustki qatlami bokeh effectlar bilan",
+            "type": "fixed",
+            "format": "mp4",
+            "includesAudio": false,
+            "postLinks": {
+                "default": "https://t.me/scs_assets/18"
+            },
+            "inputs": []
+        },
+        {
+            "id": "StarBurstOverlay001",
+            "name": "Yulduzlar otilishi ustki qatlami 001",
+            "description": "Videolaringiz zerikarli bo'lib qolmasligini ta'minlab beruvchi yulduzlar otilishi ustki qatlami",
+            "type": "fixed",
+            "format": "mov",
+            "includesAudio": false,
+            "variants": ["gold", "silver"],
+            "postLinks": {
+                "gold": "https://t.me/scs_assets/23",
+                "silver": "https://t.me/scs_assets/24"
+            },
+            "inputs": [
+                {
+                    "key": "variant",
+                    "prompt": "Varyant tanlang: gold or silver",
+                    "validation": "^(gold|silver)$"
+                }
+            ]
+        }
+    ],
+    "YOZUV ANIMATSIYALARI": [
+        {
+            "id": "GlitchText001",
+            "name": "Glitch Tekst 001",
+            "description": "Matritsa stilidagi glitchli tekst sizning texnik videolaringizni yanada sifatliroq qiladi",
+            "type": "editable",
+            "format": "mov",
+            "includesAudio": false,
+            "inputs": [
+                {
+                    "key": "text",
+                    "prompt": "*Tekstni kiriting* (Misol uchun: nom, ism, niknom, artikl va hokazo)",
+                    "validation": "^[a-zA-Z0-9_. ]+$"
+                },
+                {
+                    "key": "fontColor",
+                    "prompt": "*Yozuv rangini kiriting* (botdagi mini ilova orqali hohlagan rangni tanlang va hexni jo'nating misol uchun: #00ff00 - yashil #ff0000 - qizil #0000ff - ko'k va hokazo)",
+                    "validation": "^#([0-9A-Fa-f]{6})$"
+                }
+            ]
+        }
+    ]
+}

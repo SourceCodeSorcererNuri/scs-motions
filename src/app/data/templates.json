@@ -1,0 +1,405 @@
+{
+  "templates": [
+    {
+      "id": "Intro01SCS",
+      "category": "Intro",
+      "title": "SCS Stilida Intro",
+      "isTransparent": false,
+      "description": "Terminal-style glitch intro with status messages.",
+      "dimensions": { "width": 1920, "height": 1080 },
+      "fps": 60,
+      "durationInFrames": 600,
+      "defaultProps": {
+        "channelName": "SOURCE_CODE_SORCERER",
+        "statusMessage": "TEACHING_LINUX",
+        "statusResult": "ONGOING",
+        "accentColor": "#22d3ee"
+      }
+    },
+    {
+      "id": "GamingIntro001",
+      "category": "Intro",
+      "title": "GAMING INTRO 001",
+      "isTransparent": false,
+      "description": "Elegant presentation intro with smooth transitions.",
+      "dimensions": { "width": 1920, "height": 1080 },
+      "fps": 60,
+      "durationInFrames": 480,
+      "defaultProps": {
+        "title": "KANAL NOMI",
+        "neonColor": "#00ffff",
+        "sunColor": "#ff0000",
+        "speed": "20"
+      }
+    },
+    {
+      "id": "ShukronaIntro01",
+      "category": "Intro",
+      "title": "ShukronaIntro01",
+      "isTransparent": false,
+      "description": "Shukrona video va foto group uchun maxsus yasalgan intro",
+      "dimensions": {"width": 1920, "height": 1080},
+      "fps": 60,
+      "durationInFrames": 420,
+      "defaultProps": {
+        "channelName": "SHUKRONA VIDEO & FOTO GROUP",
+        "subTexts": ["Presents"],
+        "activeText": "Presents"
+      }
+    },
+    {
+      "id": "InstagramNotify",
+      "category": "Ijtimoiy",
+      "title": "Instagram Notifikatsiyasi",
+      "isTransparent": true,
+      "description": "Animatsiyali Instagram notifikatsiyasi.",
+      "dimensions": { "width": 1920, "height": 1080 },
+      "fps": 60,
+      "durationInFrames": 300,
+      "defaultProps": {
+        "channelName": "scs_motions"
+      }
+    },
+    {
+      "id": "YoutubeNotify",
+      "category": "Ijtimoiy",
+      "title": "YouTube Notifikatsiyasi",
+      "isTransparent": true,
+      "description": "Animatsiyali youtube kanal notifikatsiyasi.",
+      "dimensions": { "width": 1920, "height": 1080 },
+      "fps": 60,
+      "durationInFrames": 300,
+      "defaultProps": {
+        "channelName": "SourceCodeSorcerer"
+      }
+    },
+    {
+      "id": "TelegramNotify",
+      "category": "Ijtimoiy",
+      "title": "Telegram Notifikatsiyasi",
+      "isTransparent": true,
+      "description": "Animatsiyali telegram notifikatsiyasi.",
+      "dimensions": { "width": 1920, "height": 1080 },
+      "fps": 60,
+      "durationInFrames": 300,
+      "defaultProps": {
+        "channelName": "SourceCodeSorcerer"
+      }
+    },
+    {
+      "id": "PhoneNumberMotion001",
+      "category": "Ijtimoiy",
+      "title": "Telefon Raqam Animatsiyasi",
+      "isTransparent": true,
+      "description": "Animatsiyali telefon raqam notifikatsiyasi.",
+      "dimensions": { "width": 1920, "height": 1080 },
+      "fps": 60,
+      "durationInFrames": 300,
+      "defaultProps": {
+        "phoneNumber": "+998 99 520 0578"
+      }
+    },
+    {
+      "id": "GlitchText",
+      "category": "Yozuv",
+      "title": "Glitch Yozuv",
+      "isTransparent": true,
+      "description": "Animatsiyali telegram notifikatsiyasi.",
+      "dimensions": { "width": 1920, "height": 1080 },
+      "fps": 60,
+      "durationInFrames": 300,
+      "defaultProps": {
+        "text": "Matrix",
+        "fontColor": "#00ff00",
+        "fontSize": "85px",
+        "glitchFrequency": "0.1"
+      }
+    },
+    {
+      "id": "DrawFillText",
+      "category": "Yozuv",
+      "title": "Chiziluvchi Yozuv",
+      "isTransparent": true,
+      "description": "Matnning avval chizilib, so'ngra rang bilan to'lishi va teskari yo'qolishi.",
+      "dimensions": { 
+        "width": 1920, 
+        "height": 1080 
+      },
+      "fps": 60,
+      "durationInFrames": 300,
+      "defaultProps": {
+        "text": "SOURCE CODE",
+        "fontSize": 150,
+        "strokeColor": "#ffffff",
+        "fillColor": "#ffffff",
+        "strokeWidth": 2,
+        "totalFrames": 300,
+        "transitionPercent": "0.4",
+        "fontUrl": ""
+      }
+    },
+    {
+      "id": "Banner",
+      "category": "Ijtimoiy",
+      "title": "Ijtimoiy tarmoq banneri",
+      "isTransparent": true,
+      "description": "3tasi birda ijtimoiy tarmoq uchun banner.",
+      "dimensions": {
+          "width": 1920,
+          "height": 1080
+      },
+      "fps": 60,
+      "durationInFrames": 300,
+      "defaultProps": {
+          "channelName": "SCS_MOTIONS",
+          "iconKeys": ["Telegram", "Instagram", "YouTube"]
+      }
+    },
+    {
+      "id": "Border-01",
+      "category": "Borderlar",
+      "title": "Border 001",
+      "isTransparent": true,
+      "description": "Kelin va kuyov ismini yozish uchun gulli border",
+      "dimensions": {"width": 1920, "height": 1080},
+      "fps": 60,
+      "durationInFrames": 720,
+      "type": "fixed",
+      "versions": ["gold", "silver"],
+      "postLinks": {
+          "gold": "https://t.me/scs_assets/13",
+          "silver": "https://t.me/scs_assets/14"
+      }
+    },
+    {
+      "id": "Border-02",
+      "category": "Borderlar",
+      "title": "Border 002",
+      "isTransparent": true,
+      "description": "Kelin va kuyov ismini yozish uchun gulli border",
+      "dimensions": {"width": 1920, "height": 1080},
+      "fps": 60,
+      "durationInFrames": 450,
+      "type": "fixed",
+      "versions": ["gold", "silver"],
+      "postLinks": {
+          "gold": "https://t.me/scs_assets/15",
+          "silver": "https://t.me/scs_assets/16"
+      }
+    },
+    {
+      "id": "Border-03",
+      "category": "Borderlar",
+      "title": "Border 003",
+      "isTransparent": true,
+      "description": "Kelin va kuyov ismini yozish uchun gulli border",
+      "dimensions": {"width": 1920, "height": 1080},
+      "fps": 60,
+      "durationInFrames": 780,
+      "type": "fixed",
+      "versions": ["gold", "silver"],
+      "postLinks": {
+          "gold": "https://t.me/scs_assets/25",
+          "silver": "https://t.me/scs_assets/26"
+      }
+    },
+    {
+        "id": "Border-04",
+        "category": "Borderlar",
+        "title": "Border 004",
+        "isTransparent": true,
+        "description": "Kelin va kuyov ismini yozish uchun gulli border",
+        "dimensions": {"width": 1920, "height": 1080},
+        "fps": 60,
+        "durationInFrames": 600,
+        "type": "fixed",
+        "versions": ["gold", "silver"],
+        "postLinks": {
+            "gold": "https://t.me/scs_assets/27",
+            "silver": "https://t.me/scs_assets/28"
+        }
+    },
+    {
+        "id": "Border-05",
+        "category": "Borderlar",
+        "title": "Border 005",
+        "isTransparent": true,
+        "description": "Kelin va kuyov ismini yozish uchun gulli border",
+        "dimensions": {"width": 1920, "height": 1080},
+        "fps": 60,
+        "durationInFrames": 1000,
+        "type": "fixed",
+        "versions": ["gold", "silver"],
+        "postLinks": {
+            "gold": "https://t.me/scs_assets/29",
+            "silver": "https://t.me/scs_assets/30"
+        }
+    },
+    {
+        "id": "Border-06",
+        "category": "Borderlar",
+        "title": "Border 006",
+        "isTransparent": true,
+        "description": "Kelin va kuyov ismini yozish uchun gulli border",
+        "dimensions": {"width": 1920, "height": 1080},
+        "fps": 60,
+        "durationInFrames": 902,
+        "type": "fixed",
+        "versions": ["gold", "silver"],
+        "postLinks": {
+            "gold": "https://t.me/scs_assets/31",
+            "silver": "https://t.me/scs_assets/32"
+        }
+    },
+    {
+        "id": "Border-07",
+        "category": "Borderlar",
+        "title": "Border 007",
+        "isTransparent": true,
+        "description": "Kelin va kuyov ismini yozish uchun gulli border",
+        "dimensions": {"width": 1920, "height": 1080},
+        "fps": 60,
+        "durationInFrames": 1050,
+        "type": "fixed",
+        "versions": ["gold", "silver"],
+        "postLinks": {
+            "gold": "https://t.me/scs_assets/33",
+            "silver": "https://t.me/scs_assets/34"
+        }
+    },
+    {
+        "id": "Border-08",
+        "category": "Borderlar",
+        "title": "Border 008",
+        "isTransparent": true,
+        "description": "Kelin va kuyov ismini yozish uchun gulli border",
+        "dimensions": {"width": 1920, "height": 1080},
+        "fps": 60,
+        "durationInFrames": 980,
+        "type": "fixed",
+        "versions": ["gold", "silver"],
+        "postLinks": {
+            "gold": "https://t.me/scs_assets/35",
+            "silver": "https://t.me/scs_assets/36"
+        }
+    },
+    {
+        "id": "Border-09",
+        "category": "Borderlar",
+        "title": "Border 009",
+        "isTransparent": true,
+        "description": "Kelin va kuyov ismini yozish uchun gulli border",
+        "dimensions": {"width": 1920, "height": 1080},
+        "fps": 60,
+        "durationInFrames": 600,
+        "type": "fixed",
+        "versions": ["gold", "silver"],
+        "postLinks": {
+            "gold": "https://t.me/scs_assets/37",
+            "silver": "https://t.me/scs_assets/38"
+        }
+    },
+    {
+        "id": "LikeAndSubscribeReminder01",
+        "category": "Ijtimoiy",
+        "title": "Layk va Obuna Shabloni",
+        "isTransparent": true,
+        "description": "YouTube kanalingiz uchun layk va obuna bo'lishni eslatuvchi shablon",
+        "dimensions": {"width": 1920, "height": 1080},
+        "fps": 60,
+        "durationInFrames": 300,
+        "type": "fixed",
+        "versions": ["default"],
+        "postLinks": {
+            "default": "https://t.me/scs_assets/39"
+        }
+    },
+    {
+        "id": "LightLeaksOverlay001",
+        "category": "Overlay",
+        "title": "LightLeaksOverlay001",
+        "isTransparent": true,
+        "description": "Contentlaringiz uchun light lieaks ustki qatlami",
+        "dimensions": {"width": 1920, "height": 1080},
+        "fps": 60,
+        "durationInFrames": 1800,
+        "type": "fixed",
+        "versions": "default",
+        "postLinks": {
+            "default": "https://t.me/scs_assets/18"
+        }
+    },
+    {
+        "id": "LightLeaksOverlay002",
+        "category": "Overlay",
+        "title": "LightLeaksOverlay002",
+        "isTransparent": true,
+        "description": "Contentlaringiz uchun light lieaks ustki qatlami",
+        "dimensions": {"width": 1920, "height": 1080},
+        "fps": 60,
+        "durationInFrames": 1800,
+        "type": "fixed",
+        "versions": "default",
+        "postLinks": {
+            "default": "https://t.me/scs_assets/40"
+        }
+    },
+    {
+        "id": "StarBurstOverlay001",
+        "category": "Overlay",
+        "title": "StarBurstOverlay001",
+        "isTransparent": true,
+        "description": "Kontentlaringiz uchun yulduzlar otilishi orqa foni",
+        "dimensions": {
+            "width": 1920,
+            "height": 1080
+        },
+        "fps": 60,
+        "durationInFrames": 1800,
+        "type": "fixed",
+        "versions": ["gold", "silver"],
+        "postLinks": {
+            "gold": "https://t.me/scs_assets/23",
+            "silver": "https://t.me/scs_assets/24"
+        }
+    },
+    {
+        "id": "WrinkledPaper001",
+        "category": "Orqa fon",
+        "title": "WrinkledPaper001",
+        "isTransparent": false,
+        "description": "G'ijimlangan qog'oz orqa foni",
+        "dimensions": {
+            "width": 1920,
+            "height": 1080
+        },
+        "fps": 60,
+        "durationInFrames": 1800,
+        "type": "fixed",
+        "versions": ["desktop", "mobile"],
+        "postLinks": {
+            "desktop": "https://t.me/scs_assets/20",
+            "mobile": "https://t.me/scs_assets/19"
+        }
+    },
+    {
+        "id": "CyberGrid001",
+        "category": "Orqa fon",
+        "title": "CyberGrid001",
+        "isTransparent": false,
+        "description": "Kiber kataklar orqa foni",
+        "dimensions": {
+            "width": 1920,
+            "height": 1080
+        },
+        "fps": 60,
+        "durationInFrames": 1800,
+        "type": "fixed",
+        "versions": ["desktop", "mobile"],
+        "postLinks": {
+            "desktop": "https://t.me/scs_assets/21",
+            "mobile": "https://t.me/scs_assets/22"
+        }
+    }
+  ]
+}
