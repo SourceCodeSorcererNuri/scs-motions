@@ -47,7 +47,7 @@
     "typescript": "5.9.3"
   },
   "scripts": {
-    "dev": "remotion studio src/remotion-entry.ts",
+    "dev": "vite",
     "web": "vite",
     "build": "vite build",
     "preview": "vite preview",
