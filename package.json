@@ -49,7 +49,8 @@
   "scripts": {
     "dev": "remotion studio src/remotion-entry.ts",
     "web": "vite",
-    "build": "npm run web",
+    "build": "vite build",
+    "preview": "vite preview",
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc",
     "install-vercel": "npm install"
