@@ -22,7 +22,7 @@ const cleanFileName = (name: string) => {
 };
 
 // --- Types & Config ---
-const AUDIO_FILES = ["music001.mp3", "music002.mp3", "music003.mp3", "music004.mp3", "music005.mp3", "music006.mp3", "music007.mp3", "TEST AUDIO.mp3", "INSANE.mp3"] as const;
+const AUDIO_FILES = ["BAD HABIT HORROR FUNK - CH4OS.mp3", "COOOK PARDON - Lvbel C5.mp3", "Nervy Funk - Slowed - DJ KVNXD.mp3", "MONTAGEM XONADA - MXZI.mp3", "Slide da Treme Melódica v2 - DJ FNK.mp3", "music006.mp3", "music007.mp3", "TEST AUDIO.mp3", "INSANE.mp3"] as const;
 const BAR_COUNT = 140;
 
 export const AudioVisualizerSchema = z.object({

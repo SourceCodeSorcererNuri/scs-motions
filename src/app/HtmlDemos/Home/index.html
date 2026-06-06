@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Fixed Navigation -->
+    <nav class="navBar">
+        <div class="logo">
+            <div class="logoDecoration"></div>
+            <span class="logo-text">SCS-MOTIONS</span>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="nav-item">Start</a>
+            <a href="#features" class="nav-item">What's inside</a>
+            <a href="#about" class="nav-item">The Logic</a>
+        </div>
+    </nav>
+
+    <main class="scroll-container">
+        <!-- Part 1: HomeStart -->
+        <section id="home" class="snap-section hero-layout">
+            <div class="content-left">
+                <div class="badge-status inset">
+                    <span class="pulse-dot"></span>
+                    <span class="mono">Everything is running smooth</span>
+                </div>
+                <h1 class="main-title">Motion design, <br><span class="aqua-gradient">right in your tab.</span></h1>
+                <p class="friendly-text">
+                    I got tired of waiting for heavy software to open just to make a simple title animation.
+                    So, I built this. It uses your browser's power to render everything instantly.
+                    No uploads, no lag—just your code turning into motion.
+                </p>
+                <div class="cta-physical-group">
+                    <button class="push-btn primary"><span class="inner">Try the Studio</span></button>
+                </div>
+            </div>
+
+            <!-- That animated monitor we made earlier goes here -->
+            <div class="hardware-monitor inset">
+                <div class="visualizer-container">
+                    <div class="core-circle">
+                        <div class="ring outer"></div>
+                        <div class="core-glow"></div>
+                    </div>
+                </div>
+                <div class="usage-bars">
+                    <div class="bar-group">
+                        <label class="mono">Rendering Power</label>
+                        <div class="progress-track">
+                            <div class="progress-fill aqua pulse-anim" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Part 2: HomeCards -->
+        <section id="features" class="snap-section grid-layout">
+            <h2 class="section-title">What you can do here</h2>
+            <div class="highlights-section">
+                <div class="highlight-card">
+                    <span class="icon-box">🎨</span>
+                    <h3>Ready-to-use stuff</h3>
+                    <p>I’ve put together over 100 templates. You can grab an intro or a lower-third and tweak it in
+                        seconds.</p>
+                </div>
+                <div class="highlight-card">
+                    <span class="icon-box">👻</span>
+                    <h3>Transparent Exports</h3>
+                    <p>Need something for a video overlay? You can export with an alpha channel (.mov or .webm) so it’s
+                        ready for your editor.</p>
+                </div>
+                <div class="highlight-card">
+                    <span class="icon-box">🚀</span>
+                    <h3>Fast as it gets</h3>
+                    <p>Since it runs on your own hardware, you don't have to wait for a server to process your video. It
+                        just happens.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Part 3: HomeDescription -->
+        <section id="about" class="snap-section text-layout">
+            <div class="detailed-manifesto inset">
+                <h2>Why I built this</h2>
+                <p>
+                    Usually, video tools want your data or a monthly subscription. SCS-Motions is different.
+                    It stays in your browser. Your files never leave your computer because it uses
+                    <strong>Web-Workers</strong> to do the heavy lifting locally. It's just a faster,
+                    more private way to create.
+                </p>
+                <footer class="simple-footer">
+                    <code>> system_ready: true</code>
+                    <p>© 2026 SCS-MOTIONS</p>
+                </footer>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

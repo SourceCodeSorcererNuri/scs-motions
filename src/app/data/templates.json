@@ -400,6 +400,64 @@
             "desktop": "https://t.me/scs_assets/21",
             "mobile": "https://t.me/scs_assets/22"
         }
+    },
+    {
+      "id": "MatrixBackground001",
+      "category": "Orqa fon",
+      "title": "Matrix Raqamli Yomg'ir",
+      "isTransparent": false,
+      "description": "O(N) optimizatsiyalangan, universal Latin harfli va dasturlash operatorli Matrix yomg'iri.",
+      "dimensions": { "width": 1920, "height": 1080 },
+      "fps": 60,
+      "durationInFrames": 1200,
+      "defaultProps": {
+        "matrixColor": "#00ff66",
+        "fontSize": 16,
+        "speedFactor": 1
+      }
+    },
+    {
+      "id": "SocialWatermark001",
+      "category": "Ijtimoiy",
+      "title": "Universal Ijtimoiy Tarmoq Watermark",
+      "isTransparent": true,
+      "description": "Ko'p tarmoqli, dizayni o'zgaruvchan (minimal, glassmorphic, neumorphic) markaziy ijtimoiy tarmoq eslatmasi.",
+      "dimensions": { "width": 1920, "height": 1080 },
+      "fps": 60,
+      "durationInFrames": 600,
+      "defaultProps": {
+        "themeStyle": "glassmorphic",
+        "backgroundColor": "#12141d",
+        "fontColor": "#ffffff",
+        "accentColor": "#00ff66",
+        "displayDurationFrames": 120,
+        "accounts": [
+          { "platformName": "Telegram", "handle": "@sorcerer_code" },
+          { "platformName": "GitHub", "handle": "sorcerer-labs" },
+          { "platformName": "YouTube", "handle": "SourceCodeSorcerer" }
+        ]
+      }
+    },
+    {
+    "id": "DustText001",
+    "category": "Yozuv",
+    "title": "Zarrachalardan Yozuv (Dust)",
+    "isTransparent": true,
+    "description": "Birlashtirilgan In/Out taymingli, past zichlikda ham to'liq o'qiladigan premium matn effekti.",
+    "dimensions": { "width": 1920, "height": 1080 },
+    "fps": 60,
+    "durationInFrames": 240,
+    "defaultProps": {
+        "text": "CREATIVE ENGINE",
+        "fontSize": 110,
+        "fontColor": "#ffffff",
+        "dustColor": "#22d3ee",
+        "particleDensity": 2,
+        "windIntensity": 3,
+        "noiseScale": 1.5,
+        "inDurationFrames": 60,
+        "outDurationFrames": 60
+        }
     }
   ]
 }

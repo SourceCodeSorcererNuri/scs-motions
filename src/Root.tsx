@@ -19,20 +19,19 @@ import {
 import {
     Banner, PhoneNumberMotion001, PhoneNumberSchema, InstagramNotify, InstagramNotifySchema,
     TelegramNotify, TelegramNotifySchema, YouTubeNotify, YouTubeNotifySchema,
-    InstagramFollowReminder001, InstagramFollowSchema, LikeAndSubscribeReminder01, BannerProps
+    InstagramFollowReminder001, InstagramFollowSchema, LikeAndSubscribeReminder01, BannerProps, SocialWatermark001, SocialWatermarkSchema
 } from './components/Social';
-
 // Overlays
 import { LightLeaksOverlay001, LightLeaksOverlay002, StarBurstOverlay001, StarBurst001Schema } from './components/Overlays';
 
 // Backgrounds
 import { WrinkledPaper001 } from './components/Backgrounds/WrinkledPaper001/WrinkledPaper001';
 import { CyberGrid001 } from './components/Backgrounds/CyberGrid001/CyberGrid001';
-
+import { MatrixBackground001, MatrixBackgroundSchema } from './components/Backgrounds/MatrixBackground001/MatrixBackground001';
 // Typography
 import { GlitchText, GlitchTextSchema } from './components/Typography/GlitchText001/GlitchText';
 import { DrawFillText, DynamicTextSchema } from './components/Typography/DrawFillText001/DrawFillTExt001';
-
+import { DustText001, DustTextSchema } from './components/Typography/DustText001/DustText001';
 // Compositions
 import { SCSAd001 } from './compositions/Ads/SCSAd001/SCSAd001';
 import { Intro001, Intro001Schema } from './compositions/Intros/IntroSCS001/Intro01';
@@ -81,6 +80,36 @@ export const RemotionRoot: React.FC<any> = (passedProps) => {
             <Composition id='LikeAndSubscribeReminder01' component={LikeAndSubscribeReminder01} durationInFrames={300} fps={60} width={1920} height={1080} />
             <Composition id="PhoneNumberMotion001" component={PhoneNumberMotion001} schema={PhoneNumberSchema} durationInFrames={300} fps={60} width={1920} height={1080} defaultProps={{ phoneNumber: "+998 00 000 0000" }} />
             <Composition id="Banner" component={Banner} schema={BannerProps} durationInFrames={300} fps={60} width={1920} height={1080} defaultProps={{ channelName: "@scs_motions", iconKeys: ["Telegram" as const, "Instagram" as const, "YouTube" as const] }} />
+            <Composition
+                id="SocialWatermark001"
+                component={SocialWatermark001}
+                schema={SocialWatermarkSchema}
+                durationInFrames={600}
+                fps={60}
+                width={1920}
+                height={1080}
+                defaultProps={{
+                    themeStyle: "neumorphic" as const,
+                    backgroundColor: "#1e222a",
+                    fontColor: "#ffffff",
+                    accentColor: "#3b82f6",
+                    displayDurationFrames: 120,
+                    accounts: [
+                        {
+                            platformName: "Telegram" as const,
+                            handle: "@sorcerer_code",
+                        },
+                        {
+                            platformName: "GitHub" as const,
+                            handle: "sorcerer-labs",
+                        },
+                        {
+                            platformName: "Instagram" as const,
+                            handle: "SourceCodeSorcerer",
+                        },
+                    ],
+                }}
+            />
 
             {/* --- INTROS --- */}
             <Composition id="ShukronaIntro01" component={IntroShukrona001} schema={IntroShukronaSchema} durationInFrames={480} fps={60} width={1920} height={1080} defaultProps={{ channelName: "SHUKRONA", subTexts: ["PRESENTS"], activeText: "PRESENTS", exitFrame: 430 }} />
@@ -94,6 +123,21 @@ export const RemotionRoot: React.FC<any> = (passedProps) => {
             <Composition id="LightLeaksOverlay02" component={LightLeaksOverlay002} durationInFrames={1800} fps={60} width={1920} height={1080} />
             <Composition id='WrinkledPaper001' component={WrinkledPaper001} durationInFrames={1200} fps={60} width={1920} height={1080} />
             <Composition id='CyberGrid001' component={CyberGrid001} durationInFrames={1200} fps={60} width={1080} height={1920} />
+            <Composition
+                id='MatrixBackground001'
+                component={MatrixBackground001}
+                schema={MatrixBackgroundSchema}
+                durationInFrames={1200}
+                fps={60}
+                width={1920}
+                height={1080}
+                defaultProps={{
+                    matrixColor: "#00ff66",
+                    fontSize: 20,
+                    speedFactor: 0.7,
+                }}
+            />
+
 
             {/* --- Typography ---*/}
             <Composition id="GlitchText001" component={GlitchText} durationInFrames={180} fps={60} width={1920} height={1080} schema={GlitchTextSchema} defaultProps={{ text: "MATRIX", fontColor: "#00ff00", fontSize: 85, glitchFrequency: 0.1 }} />
@@ -132,7 +176,7 @@ export const RemotionRoot: React.FC<any> = (passedProps) => {
                 height={1080}
                 schema={AudioVisualizerSchema}
                 defaultProps={{
-                    audioFileName: "music003.mp3" as const,
+                    audioFileName: "Nervy Funk - Slowed - DJ KVNXD.mp3" as const,
                     baseGlow: 0,
                 }}
                 calculateMetadata={async ({ props }) => {

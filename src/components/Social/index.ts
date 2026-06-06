@@ -5,3 +5,4 @@ export * from './Notifications/JoinSocialMediaNotifications/joinTGNotif';
 export * from './Notifications/JoinSocialMediaNotifications/joinYTNotif';
 export * from './Reminders/InstagramFollowReminders/001/InstagramFollowReminder001';
 export * from './Reminders/LikeAndSubscribeReminder/01/LikeAndSubscribeReminder01';
+export * from './Reminders/SocialWatermark001/SocialWatermark001'

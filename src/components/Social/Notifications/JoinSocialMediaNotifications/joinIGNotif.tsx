@@ -94,7 +94,7 @@ export const InstagramNotify: React.FC<InstagramNotifyProps> = ({ channelName })
     const characters = useMemo(() => fullHandle.split(''), [fullHandle]);
 
     // 1. Dynamic font size: starts at 32px, scales down for handles longer than 12 chars
-    const fontSize = Math.min(32, Math.max(20, 32 - (fullHandle.length - 12) * 1.2));
+    const fontSize = Math.min(32, Math.max(22, 32 - (fullHandle.length - 12) * 1.2));
 
     // 2. Dynamic width: pill expands based on character count and current font size
     const targetWidth = Math.min(800, 280 + fullHandle.length * (fontSize * 0.6));
